@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre univers</title>
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <script>
+        function redirectToMonCompte() {
+            window.location.href = "Moncompte.html";
+        }
+    </script>
+   <script>
+    $(document).ready(function() {
+        // Faire une requête AJAX pour récupérer les données du script PHP
+        $.ajax({
+            url: 'page.php', // Chemin vers votre script PHP
+            method: 'GET', // ou 'POST' selon votre configuration
+            success: function(response) {
+                // Afficher la réponse dans la balise <div> avec l'ID 'resultats'
+                $('#resultats').html(response);
+            },
+            error: function(xhr, status, error) {
+                console.error(error);
+            }
+        });
+    });
+</script>
+</head>
+
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://thumbs2.imgbox.com/6d/4f/DnR7Pw8S_t.png" alt="image host"/>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="notre_univers.html">NOTRE UNIVERS</a></li>
+                <li><a href="nos-services.html">NOS SERVICES</a></li>
+                <li><a href="nos-véhicules.html">NOS VÉHICULES</a></li>
+                <li><a href="#nos-avis">NOS AVIS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="buttons-container">
+                <button class="button-primary">Créer un nouveau compte</button>
+                <button class="button-secondary" onclick="redirectToMonCompte()">Mon compte</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1 class="nos-véhicules">NOS VÉHICULES</h1>
+
+        <!-- Section FILTRER -->
+        <section class="filtrer-section">
+            <div class="encart-filtrer">
+                <h3>FILTRER</h3>
+     
+                <div class="filtrer-options">
+                    <h4>MARQUES <i class="fas fa-chevron-down"></i></h4>
+                    <hr>
+                    <h4>MODÈLES <i class="fas fa-chevron-down"></i></h4>
+                    <hr>
+                    <h4>CATÉGORIE <i class="fas fa-chevron-down"></i></h4>
+                </div>
+                <hr>
+                <div class="filtrer-options">
+                    <h4>ANNÉE</h4>
+                    <hr>
+                    <!-- Filtre ANNÉE -->
+                    <div class="annee-filtre">
+                        <div class="filtre-trait">•----------------•</div>
+                        <div class="filtre-encart">2001 - 2021 <button>Réinitialiser</button></div>
+                    </div>
+
+                    <h4>KILOMÉTRAGE</h4>
+                    <hr>
+                    <!-- Filtre KILOMÉTRAGE -->
+                    <div class="kilometrage-filtre">
+                        <div class="filtre-trait">•----------------•</div>
+                        <div class="filtre-encart">177 220 km - 267 220 km <button>Réinitialiser</button></div>
+                    </div>
+
+                    <h4>PRIX</h4>
+                    <hr>
+                    <!-- Filtre PRIX -->
+                    <div class="prix-filtre">
+                        <div class="filtre-trait">•----------------•</div>
+                        <div class="filtre-encart">4 7905€ - 9 190€ <button>Réinitialiser</button></div>
+                    </div>
+                </div>
+            </div>
+    
+        <!-- Bouton Réinitialiser la recherche -->
+        <div style="text-align: center; padding: 20px;">
+            <button class="reinitialiser-btn">Réinitialiser la recherche</button>
+        </div>
+    </section>
+        
+    
+    <!-- Nombre de véhicules trouvés -->
+        <p class="nb-vehicules">176 véhicules trouvés</p>
+
+        <!-- Photos -->
+        <div class="photos-section">
+            <!-- Placeholder pour les photos -->
+            <!-- Insérer vos balises <img> ici -->
+        </div>
+
+        <!-- Bouton Afficher plus/moins -->
+        <div class="afficher-plus-moins">
+            <button class="afficher-plus-btn">Afficher plus <i class="fas fa-plus"></i></button>
+            <button class="afficher-moins-btn">Afficher moins <i class="fas fa-minus"></i></button>
+        </div>
+    </div>
+
+
+    <!-- Inclure FontAwesome pour les icônes -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <div id="resultats"></div>
+</body>
+</html>

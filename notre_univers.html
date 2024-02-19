@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre univers</title>
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <script>
+        function redirectToMonCompte() {
+            window.location.href = "Moncompte.html";
+        }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://thumbs2.imgbox.com/6d/4f/DnR7Pw8S_t.png" alt="image host"/>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="notre_univers.html">NOTRE UNIVERS</a></li>
+                <li><a href="nos-services.html">NOS SERVICES</a></li>
+                <li><a href="nos-véhicules.html">NOS VÉHICULES</a></li>
+                <li><a href="#nos-avis">NOS AVIS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="buttons-container">
+                <button class="button-primary">Créer un nouveau compte</button>
+                <button class="button-secondary" onclick="redirectToMonCompte()">Mon compte</button>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="h1-padding">UN NOM, UNE HISTOIRE</h1>
+    <p class="p-univers">Le GARAGE V.PARROT, fondé par Vincent PARROT, est un atelier de réparation automobile à Toulouse. Avec ses 15 ans d’expérience, Vincent et son équipe offrent des services de réparation de qualité, ainsi qu’une sélection de véhicules d’occasion. Leur engagement envers la confiance et le service client en font une référence incontournable pour les passionnés de voiture.</p>
+    <br>
+
+    <div class="container-full-width container-univers" id="container2">
+        <div class="row">
+            <div class="col">
+                <div class="about-image">
+                    <img src="https://thumbs2.imgbox.com/02/af/7X0963T7_t.jpg" alt="image host" class="second-container-image"/>
+                    <div class="image-overlay">
+                        <p>LE FONDATEUR</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="about-image">
+                    <img src="https://thumbs2.imgbox.com/a3/54/iJYQKB3x_t.png" alt="image host" class="second-container-image"/>
+                    <div class="image-overlay">
+                        <p>L’ÉQUIPE COMMERCIALE</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="about-image">
+                    <a href="https://imgbox.com/9KetbTMN" target="_blank"><img src="https://thumbs2.imgbox.com/86/18/9KetbTMN_t.png" alt="image host"/></a>
+                    <div class="image-overlay">
+                        <p>L’ÉQUIPE TECHNIQUE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="horizontal-bar">
+    <h1>GARAGE V.PARROT EN QUELQUES CHIFFRES</h1>
+
+    <div class="chiffres-container">
+        <div class="chiffre-item">
+            <div class="chiffre-circle">+11,5M€</div>
+            <p>Chiffre d’affaires</p>
+        </div>
+        <div class="chiffre-item">
+            <div class="chiffre-circle">+8 500</div>
+            <p>Véhicules vendus</p>
+        </div>
+        <div class="chiffre-item">
+            <div class="chiffre-circle">3 750 M²</div>
+            <p>Bâtiments</p>
+        </div>
+        <div class="chiffre-item">
+            <div class="chiffre-circle">+150</div>
+            <p>Véhicules en stock</p>
+        </div>
+    </div>
+    <hr class="horizontal-bar">
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>DU LUNDI AU VENDREDI</p>
+                <p>08H30 À 18H00</p>
+                <p>03 04 05 06 07</p>
+                <p>contact@vincent_parrot.com</p>
+                <p>GARAGE V.PARROT</p>
+                <p>29 rue Dufour</p>
+                <p>31400 TOULOUSE</p>
+            </div>
+            <div class="footer-box">
+                <ul class="footer-links">
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Plan du site</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
