@@ -32,7 +32,7 @@ $(document).ready(function() {
                 transform: 'translateX(0) scale(1) rotate(0deg)',
                 opacity: 1
             } : {
-                transform: `translateX(${ $this.index() % 2 === 0 ? '-200px' : '200px' }) scale(0.8) rotate(${ $this.index() % 2 === 0 ? '-10deg' : '10deg' })`,
+                transform: $this.index() % 2 === 0 ? 'translateX(-200px) scale(0.8) rotate(-10deg)' : 'translateX(200px) scale(0.8) rotate(10deg)',
                 opacity: 0
             };
             $this.css({
@@ -44,5 +44,4 @@ $(document).ready(function() {
 
     animateElements();
     $(window).scroll(animateElements);
-
-    
+});
