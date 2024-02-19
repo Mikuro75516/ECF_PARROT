@@ -1,0 +1,601 @@
+/* Styles pour la barre de navigation */
+nav {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 5px 10px; /* Réduction de la taille du rembourrage horizontal */
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* Assure que la nav prend toute la largeur */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    display: flex; /* Utilisation de flexbox pour aligner les éléments */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    align-items: baseline;
+}
+/* Styles pour la barre de navigation */
+.nav-container {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 5px 10px; /* Réduction de la taille du rembourrage horizontal */
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* Assure que la nav prend toute la largeur */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    display: flex; /* Utilisation de flexbox pour aligner les éléments */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    align-items: center; /* Centrer verticalement les éléments */
+}
+/* Styles pour les liens de navigation */
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Retire les puces de liste */
+    display: flex; /* Utilisation de flexbox pour les éléments li */
+    align-items: center; /* Centrer verticalement les éléments */
+    margin-right: auto; /* Met les liens à gauche en poussant les autres éléments vers la droite */
+}
+
+nav ul li {
+    margin-left: 20px; /* Espacement entre les éléments */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Pas d'espacement à gauche pour le premier élément */
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px; /* Ajustez le rembourrage horizontalement */
+    display: block;
+}
+
+/* Change la couleur au survol */
+nav ul li a:hover {
+    background-color: #34495e;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 60px; 
+}
+
+.buttons-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.button-primary,
+.button-secondary,
+.button-centré,
+.reinitialiser-btn,
+button {
+    border-radius: 5px;
+}
+
+.buttons-container button,
+.reinitialiser-btn, 
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Ajout d'une marge à droite entre les boutons */
+}
+
+.buttons-container button:hover {
+    background-color: #2980b9; /* Changement de couleur au survol */
+}
+
+.buttons-container button.button-centré {
+    display: block;
+    margin: 0 auto;
+}
+
+
+footer {
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.horizontal-bar {
+    border: 4px solid #2c3e50; /* Augmente l'épaisseur de la bordure */
+    margin: 20px 0;
+}
+
+.engagement-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Pour centrer horizontalement */
+}
+
+.engagement-pair {
+    flex-basis: calc(20% - 10px);
+    margin-bottom: 20px;
+    display: flex; /* Utilisation de Flexbox pour aligner verticalement le texte et l'image */
+    flex-direction: column; /* Pour empiler le texte et l'image verticalement */
+    align-items: center; /* Pour centrer horizontalement chaque paire */
+}
+
+.engagement {
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.engagement h3 {
+    margin: 0;
+}
+
+.engagement img {
+    width: 100%;
+    height: auto;
+}
+
+.engagement-pair .engagement,
+.engagement-pair a {
+    display: block;
+    margin-bottom: 10px; /* Espacement entre le texte et l'image */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    padding: 20px 0; /* Ajout de padding top et bottom */
+}
+
+.voiture.en.avant {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden; 
+    width: 100%;
+    justify-content: space-between;
+}
+
+.voiture.en.avant a {
+    border: 3px solid #2C3E50; /* Ajouter une bordure à chaque lien */
+    border-radius: 5px;
+    margin: 5px; /* Ajouter une marge pour l'espace entre les images */
+    display: inline-block; /* Permettre le positionnement en ligne des liens */
+}
+
+.voiture.en-avant img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-container {
+    background-color: #fff; /* Couleur de fond du footer */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Couleur du texte à l'intérieur de l'encart */
+}
+
+.footer-container p {
+    margin: 5px 0;
+    font-size: 14px; /* Police plus petite */
+}
+
+.footer-info {
+    background-color: #2c3e50; /* Couleur de fond de l'encart */
+    padding: 5px 20px; /* Réduction de l'espacement à l'intérieur de l'encart */
+    text-align: center; /* Centrage du contenu */
+    color: #fff; /* Couleur du texte */
+    font-size: 14px; /* Taille de police */
+    margin: 0; /* Supprime les marges */
+    border-radius: 5px; /* Ajoutez des coins arrondis */
+    max-width: 300px; /* Définir une largeur maximale */
+    margin: 0 auto; /* Centrer horizontalement */
+}
+
+
+.footer-links li a {
+    color: #333; /* Couleur des liens dans le footer */
+    text-decoration: none;
+}
+
+/* Styles pour le logo */
+.logo {
+    display: flex; /* Utilisation de flexbox pour aligner le logo */
+    align-items: center; /* Centrer verticalement le logo */
+}
+
+.container-full-width {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer horizontalement */
+    gap: 20px; /* Espacement entre les colonnes */
+}
+
+.col {
+    flex: 1 1 100%; /* Pour une seule colonne qui occupe toute la largeur */
+    max-width: 100%; /* Largeur maximale pour une seule colonne */
+}
+
+.about-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+/* Styles pour les images */
+.about-image img {
+    width: 100%; /* Assure que l'image occupe toute la largeur de son conteneur */
+    height: 100%; /* Hauteur de 100% pour remplir la zone disponible */
+    object-fit: cover; /* Couvre la zone de l'image sans déformation */
+}
+
+/* Pour ajuster la hauteur des images "UN NOM, UNE HISTOIRE" et "L'AMOUR DE L'AUTOMOBILE" */
+.about-image img.first-container-image,
+.about-image img.second-container-image {
+    width: 100%;
+    max-height: 350px; /* ou toute autre valeur souhaitée */
+    height: auto;
+}
+
+/* Styles pour le conteneur des images */
+.image-container {
+    display: flex;
+    overflow-x: auto; /* Ajoute une barre de défilement horizontale si nécessaire */
+    height: 350px; /* Hauteur fixe pour toutes les images */
+}
+
+/* Styles pour les images */
+.image-container img {
+    flex-shrink: 0; /* Empêche les images de rétrécir pour tenir dans le conteneur */
+    height: 100%; /* Hauteur de 350px */
+    max-width: 100%; /* Largeur maximale pour conserver les proportions */
+    object-fit: cover; /* Couvre la zone de l'image sans déformation */
+    margin-right: 10px; /* Espacement entre les images */
+}
+
+.container-à-propos .row {
+    display: flex; /* Utilisation de flexbox pour les éléments enfants */
+}
+
+.container-à-propos .col {
+    flex: 1; /* Chaque colonne prendra 50% de la largeur */
+    max-width: 50%; /* Limiter la largeur à 50% */
+}
+
+.about-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; /* Assure que les images prennent toute la hauteur */
+}
+
+.about-image img {
+    width: 100%; /* Assure que l'image occupe toute la largeur du conteneur */
+    height: 100%; /* Assure que l'image prend toute la hauteur du conteneur */
+    object-fit: cover; /* Couvre la zone de l'image sans déformation */
+}
+/* Styles spécifiques pour la deuxième page */
+.container-univers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-univers .row {
+    display: flex;
+}
+
+.container-univers .col {
+    flex: 1;
+}
+
+.container-univers .about-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.container-univers .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.h1-padding,
+.nos-véhicules {
+    padding-top: 100px;
+}
+.p-univers {
+    padding-left: 380px;
+    padding-right: 380px;
+    text-align: center;
+}
+/* Styles pour le conteneur des chiffres */
+.chiffres-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+/* Styles pour chaque élément de chiffre */
+.chiffre-item {
+    text-align: center;
+}
+
+/* Styles pour le cercle de chiffre */
+.chiffre-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 24px;
+    line-height: 100px;
+}
+
+/* Ajout d'un espace supplémentaire pour le texte */
+.chiffre-item p {
+    margin-top: 10px;
+}
+/* Styles pour le conteneur des services */
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+/* Styles pour chaque élément de service */
+.service-item {
+    position: relative; /* Position relative pour positionner l'encart semi-transparent */
+}
+
+/* Pour ajuster la taille des images de "MECANIQUE", "CARROSSERIE", "PNEUMATIQUES", "PARE-BRISE" */
+.service-image {
+    width: 100%; /* Faire en sorte que les images remplissent toute la largeur */
+    height: auto; /* Garder le rapport hauteur-largeur */
+    position: relative; /* Position relative pour le positionnement de l'encart */
+}
+
+/* Styles pour le texte en surimpression */
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+/* Styles pour le texte en surimpression au survol */
+.service-item:hover .image-overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Plus foncé au survol */
+}
+/* Pour ajuster la taille des images de "UN NOM, UNE HISTOIRE" et de "L'AMOUR DE L'AUTOMOBILE" */
+.about-image img.first-container-image {
+    width: 100%; /* Ajuster la largeur à 100% */
+    height: auto; /* Garder le rapport hauteur-largeur */
+}
+.service-overlay {
+    position: absolute; /* Position absolue pour l'encart */
+    bottom: 0; /* Aligner l'encart en bas de l'image */
+    left: 0; /* Aligner l'encart à gauche de l'image */
+    width: 100%; /* Assurez-vous que l'encart a la même largeur que l'image */
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Remplissage */
+    box-sizing: border-box; /* Inclure les bordures et le remplissage dans la largeur */
+    text-align: center; /* Centrer le texte */
+    font-weight: bol;
+}
+/* Pour positionner l'encart semi-transparent */
+.service-item {
+    position: relative; /* Position relative pour positionner l'encart semi-transparent */
+}
+
+.service-image img {
+    width: 100%; /* Assurez-vous que les images remplissent toute la largeur */
+    height: auto; /* Garder le rapport hauteur-largeur */
+}
+
+/* Pour ajuster la hauteur de l'encart semi-transparent en fonction de la taille de l'image */
+.service-overlay {
+    bottom: 0; /* Positionner l'encart au bas de l'image */
+    height: auto; /* Ajuster la hauteur en fonction du contenu */
+}
+
+/* Centrer le texte dans les encarts semi-transparents */
+.service-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Pour ajuster la taille des images de "MÉCANIQUE", "CARROSSERIE", "PNEUMATIQUES", "PARE-BRISE" */
+.service-image img {
+    width: 100%; /* Faire en sorte que les images remplissent toute la largeur */
+    height: 200px; /* Hauteur fixe pour toutes les images */
+}
+/* Style pour le bouton "Mon compte" */
+.button-secondary,
+.button-secondary-annuler,
+.button-secondary-envoyer {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-secondary:hover, 
+.button-secondary-annuler:hover,
+.button-secondary-envoyer:hover,
+.reinitialiser-btn:hover,
+button:hover {
+    background-color: #2980b9;
+}
+.h1-moncompte {
+    text-align: start;
+    padding-top: px;
+}
+
+/* Style pour les sections du formulaire */
+.email,
+.password {
+    margin-bottom: 20px;
+}
+
+/* Style pour les labels */
+.email label,
+.password label {
+    display: block; /* Affiche le label sur une nouvelle ligne */
+    font-weight: bold; /* Met en gras le texte du label */
+}
+/* Style pour le texte "Mot de passe oublié ?" */
+.forgot-password {
+    font-size: 12px; /* Définir une taille de police plus petite */
+    float: right;
+}
+/* Style pour les champs de saisie */
+input[type="email"],
+input[type="password"] {
+    border-radius: 3px; /* Arrondir les coins */
+    padding: 5px; /* Ajouter un remplissage */
+    width: 300px; /* Définir une largeur fixe */
+    box-sizing: border-box; /* Inclure les bordures et le remplissage dans la largeur */
+}
+
+.mon-compte {
+    padding: 1px 10px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    padding-top: 0 /* Ajuster cette valeur selon vos besoins */
+}
+.button-secondary-annuler,
+button {
+    margin-right: 120px; /* Ajout d'une marge supplémentaire à droite pour séparer le bouton "Annuler" */
+}
+
+.service-container {
+    padding-top: 50px;
+    max-width: 70%;
+    margin-left: 0; /* Supprimer la marge automatique à gauche */
+    display: flex;
+    align-items: flex-start; /* Aligner le contenu en haut */
+    position: relative; /* Position relative pour les enfants absolus */
+}
+
+.service-image {
+    flex: 0 0 25%; /* La largeur de l'image est 25% de la largeur de son conteneur */
+    margin-right: 20px; /* Espacement entre l'image et le texte */
+}
+
+.service-image img {
+    padding-top: 30px;
+    width: 35vw; /* L'image occupe 50% de la largeur de l'écran */
+    height: auto; /* Pour conserver le ratio d'aspect */
+}
+
+.service-text {
+    flex: 1; /* Le texte prendra tout l'espace restant */
+    font-family: 'Poppins', sans-serif; /* Utilisation de la police Poppins */
+    color: #333; /* Couleur du texte */
+    padding-top: 1px; /* Ajustement pour déplacer le texte plus haut */
+}
+.special-text {
+    font-size: smaller; /* Taille de police plus petite */
+    font-weight: bold; /* Texte en gras */
+}
+.special-heading {
+    font-size: 1.5em; /* Taille de police équivalente à h3 */
+    font-weight: bold; /* Texte en gras */
+    /* Vous pouvez également ajouter d'autres styles spécifiques à votre h3 ici */
+}
+/* Ajoutez ce CSS pour modifier l'ordre des éléments à chaque section */
+.service-container:nth-child(even) .service-image {
+    order: 2; /* Change l'ordre de l'image */
+}
+
+.service-container:nth-child(odd) .service-text {
+    order: 2; /* Change l'ordre du texte */
+}
+
+.filtrer-section {
+    border: 5px solid #2c3e50; /* Bordure solide 2px couleur #2c3e50 */
+    padding: 20px; /* Marge intérieure */
+    max-width: 400px; /* Ajustez la largeur maximale selon vos besoins */
+    display: inline-block; /* Ajoutez cette propriété pour permettre l'alignement horizontal */
+}
+
+.nb-vehicules {
+    display: inline-block; /* Permettre l'alignement horizontal */
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    vertical-align: top; /* Alignement vertical au-dessus */
+    margin-top: -10px; /* Ajuster la marge vers le haut selon vos besoins */
+}
+
+/* Styles pour les boutons de la page "Nos véhicules" */
+.button-nos-vehicules {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-nos-vehicules:hover {
+    background-color: #2980b9;
+}
+
+/* Styles pour les boutons à l'intérieur de chaque encart filtrer-encart */
+.filtre-encart button {
+    float: right; /* Aligner les boutons à droite */
+    margin: 0; /* Supprimer complètement les marges */
+}
+/* Styles pour les valeurs de kilométrage */
+.kilometrage-filtre .filtre-encart,
+.annee-filtre .filtre-encart,
+.prix-filtre .filtre-encart {
+    font-size: 11px; /* Définir une taille de police plus petite */
+}
