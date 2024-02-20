@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <script>
+        function redirectToMonCompte() {
+            window.location.href = "Moncompte.html";
+        }
+    </script>
+    <script>
+        function redirectToCreerUnComptePage() {
+            window.location.href = "creeruncompte.html";
+        }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://thumbs2.imgbox.com/6d/4f/DnR7Pw8S_t.png" alt="image host"/>
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="notre_univers.html">NOTRE UNIVERS</a></li>
+                <li><a href="nos-services.html">NOS SERVICES</a></li>
+                <li><a href="nos-véhicules.html">NOS VÉHICULES</a></li>
+                <li><a href="nosavis.html">NOS AVIS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="buttons-container">
+                <button class="button-primary" onclick="redirectToCreerUnComptePage()">Créer un nouveau compte</button>
+                <button class="button-secondary" onclick="redirectToMonCompte()">Mon compte</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="h1-nosavis">NOS CLIENTS TÉMOIGNENT</h1>
+        
+        <section class="avis">
+            <div class="avis-gauche">
+                <h2>VOS AVIS SUR GARAGE V.PARROT</h2>
+                <!-- Liste des avis clients -->
+                <div class="avis-client">
+                    <div class="note">
+                        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span> <!-- Note 5 étoiles -->
+                    </div>
+                    <div class="details">
+                        <p>Login: utilisateur1</p>
+                        <p>Date: 20 février 2024</p>
+                        <p>Commentaire: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="avis-client">
+                    <div class="note">
+                        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span> <!-- Note 4 étoiles -->
+                    </div>
+                    <div class="details">
+                        <p>Login: utilisateur2</p>
+                        <p>Date: 19 février 2024</p>
+                        <p>Commentaire: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <!-- Ajoutez d'autres avis ici -->
+            </div>
+
+            <div class="avis-droite">
+                <h2>Laissez votre avis</h2>
+                <form>
+                    <div class="rating">
+                        <span class="star" onclick="setRating(1)">&#9734;</span> <!-- Étoile vide (non sélectionnée) -->
+                        <span class="star" onclick="setRating(2)">&#9734;</span>
+                        <span class="star" onclick="setRating(3)">&#9734;</span>
+                        <span class="star" onclick="setRating(4)">&#9734;</span>
+                        <span class="star" onclick="setRating(5)">&#9734;</span>
+                        <span class="star" onclick="annulerNote()">&#9734;</span> <!-- Annuler la note -->
+                    </div>
+                    <textarea id="commentaire" name="commentaire" placeholder="Partagez votre expérience chez GARAGE V.PARROT"></textarea>
+                    <input type="text" id="login" name="login" placeholder="Votre login">
+                    <button type="button" class="button-annuler" onclick="annulerAvis()">Annuler</button>
+                    <button type="button" class="button-publier" onclick="publierAvis()">Publier</button>
+                    
+                    
+
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>DU LUNDI AU VENDREDI</p>
+                <p>08H30 À 18H00</p>
+                <p>03 04 05 06 07</p>
+                <p>contact@vincent_parrot.com</p>
+                <p>GARAGE V.PARROT</p>
+                <p>29 rue Dufour</p>
+                <p>31400 TOULOUSE</p>
+            </div>
+            <div class="footer-box">
+                <ul class="footer-links">
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Plan du site</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

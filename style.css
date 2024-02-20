@@ -1,58 +1,58 @@
-/* Styles pour la barre de navigation */
-nav {
+ /* Styles pour la barre de navigation */
+ nav {
     background-color: #2c3e50;
     color: #fff;
-    padding: 5px 10px; /* Réduction de la taille du rembourrage horizontal */
+    padding: 5px 10px; 
     font-weight: bold;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0; /* Assure que la nav prend toute la largeur */
+    right: 0; 
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    display: flex; /* Utilisation de flexbox pour aligner les éléments */
-    justify-content: space-between; /* Espacement égal entre les éléments */
+    display: flex; 
+    justify-content: space-between; 
     align-items: baseline;
 }
 /* Styles pour la barre de navigation */
 .nav-container {
     background-color: #2c3e50;
     color: #fff;
-    padding: 5px 10px; /* Réduction de la taille du rembourrage horizontal */
+    padding: 5px 10px; 
     font-weight: bold;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0; /* Assure que la nav prend toute la largeur */
+    right: 0; 
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    display: flex; /* Utilisation de flexbox pour aligner les éléments */
-    justify-content: space-between; /* Espacement égal entre les éléments */
-    align-items: center; /* Centrer verticalement les éléments */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
 }
 /* Styles pour les liens de navigation */
 nav ul {
     padding: 0;
     margin: 0;
-    list-style: none; /* Retire les puces de liste */
-    display: flex; /* Utilisation de flexbox pour les éléments li */
-    align-items: center; /* Centrer verticalement les éléments */
-    margin-right: auto; /* Met les liens à gauche en poussant les autres éléments vers la droite */
+    list-style: none; 
+    display: flex; 
+    align-items: center;
+    margin-right: auto;
 }
 
 nav ul li {
-    margin-left: 20px; /* Espacement entre les éléments */
+    margin-left: 20px; 
 }
 
 nav ul li:first-child {
-    margin-left: 0; /* Pas d'espacement à gauche pour le premier élément */
+    margin-left: 0; 
 }
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    padding: 10px 15px; /* Ajustez le rembourrage horizontalement */
+    padding: 10px 15px;
     display: block;
 }
 
@@ -90,11 +90,11 @@ button {
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-right: 10px; /* Ajout d'une marge à droite entre les boutons */
+    margin-right: 10px;
 }
 
 .buttons-container button:hover {
-    background-color: #2980b9; /* Changement de couleur au survol */
+    background-color: #2980b9; 
 }
 
 .buttons-container button.button-centré {
@@ -125,22 +125,22 @@ footer {
 }
 
 .horizontal-bar {
-    border: 4px solid #2c3e50; /* Augmente l'épaisseur de la bordure */
+    border: 4px solid #2c3e50; 
     margin: 20px 0;
 }
 
 .engagement-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Pour centrer horizontalement */
+    justify-content: space-around;
 }
 
 .engagement-pair {
     flex-basis: calc(20% - 10px);
     margin-bottom: 20px;
-    display: flex; /* Utilisation de Flexbox pour aligner verticalement le texte et l'image */
-    flex-direction: column; /* Pour empiler le texte et l'image verticalement */
-    align-items: center; /* Pour centrer horizontalement chaque paire */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 }
 
 .engagement {
@@ -162,13 +162,13 @@ footer {
 .engagement-pair .engagement,
 .engagement-pair a {
     display: block;
-    margin-bottom: 10px; /* Espacement entre le texte et l'image */
+    margin-bottom: 10px; 
 }
 
 h1 {
     text-align: center;
     color: #333;
-    padding: 20px 0; /* Ajout de padding top et bottom */
+    padding: 20px 0;
 }
 
 .voiture.en.avant {
@@ -180,10 +180,10 @@ h1 {
 }
 
 .voiture.en.avant a {
-    border: 3px solid #2C3E50; /* Ajouter une bordure à chaque lien */
+    border: 3px solid #2C3E50;
     border-radius: 5px;
-    margin: 5px; /* Ajouter une marge pour l'espace entre les images */
-    display: inline-block; /* Permettre le positionnement en ligne des liens */
+    margin: 5px; 
+    display: inline-block; 
 }
 
 .voiture.en-avant img {
@@ -192,56 +192,56 @@ h1 {
 }
 
 .footer-container {
-    background-color: #fff; /* Couleur de fond du footer */
+    background-color: #fff; 
     padding: 20px;
     text-align: center;
-    color: #fff; /* Couleur du texte à l'intérieur de l'encart */
+    color: #fff; 
 }
 
 .footer-container p {
     margin: 5px 0;
-    font-size: 14px; /* Police plus petite */
+    font-size: 14px; 
 }
 
 .footer-info {
-    background-color: #2c3e50; /* Couleur de fond de l'encart */
-    padding: 5px 20px; /* Réduction de l'espacement à l'intérieur de l'encart */
-    text-align: center; /* Centrage du contenu */
-    color: #fff; /* Couleur du texte */
-    font-size: 14px; /* Taille de police */
-    margin: 0; /* Supprime les marges */
-    border-radius: 5px; /* Ajoutez des coins arrondis */
-    max-width: 300px; /* Définir une largeur maximale */
-    margin: 0 auto; /* Centrer horizontalement */
+    background-color: #2c3e50; 
+    padding: 5px 20px; 
+    text-align: center; 
+    color: #fff; 
+    font-size: 14px;
+    margin: 0; 
+    border-radius: 5px; 
+    max-width: 300px; 
+    margin: 0 auto; 
 }
 
 
 .footer-links li a {
-    color: #333; /* Couleur des liens dans le footer */
+    color: #333; 
     text-decoration: none;
 }
 
 /* Styles pour le logo */
 .logo {
-    display: flex; /* Utilisation de flexbox pour aligner le logo */
-    align-items: center; /* Centrer verticalement le logo */
+    display: flex; 
+    align-items: center; 
 }
 
 .container-full-width {
     display: flex;
-    justify-content: center; /* Centrer horizontalement */
+    justify-content: center; 
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centrer horizontalement */
-    gap: 20px; /* Espacement entre les colonnes */
+    justify-content: center; 
+    gap: 20px; 
 }
 
 .col {
-    flex: 1 1 100%; /* Pour une seule colonne qui occupe toute la largeur */
-    max-width: 100%; /* Largeur maximale pour une seule colonne */
+    flex: 1 1 100%; 
+    max-width: 100%; 
 }
 
 .about-image {
@@ -253,55 +253,55 @@ h1 {
 
 /* Styles pour les images */
 .about-image img {
-    width: 100%; /* Assure que l'image occupe toute la largeur de son conteneur */
-    height: 100%; /* Hauteur de 100% pour remplir la zone disponible */
-    object-fit: cover; /* Couvre la zone de l'image sans déformation */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
 
-/* Pour ajuster la hauteur des images "UN NOM, UNE HISTOIRE" et "L'AMOUR DE L'AUTOMOBILE" */
+/* Pour ajuster "UN NOM, UNE HISTOIRE" et "L'AMOUR DE L'AUTOMOBILE" */
 .about-image img.first-container-image,
 .about-image img.second-container-image {
     width: 100%;
-    max-height: 350px; /* ou toute autre valeur souhaitée */
+    max-height: 350px; 
     height: auto;
 }
 
 /* Styles pour le conteneur des images */
 .image-container {
     display: flex;
-    overflow-x: auto; /* Ajoute une barre de défilement horizontale si nécessaire */
-    height: 350px; /* Hauteur fixe pour toutes les images */
+    overflow-x: auto; 
+    height: 350px;
 }
 
 /* Styles pour les images */
 .image-container img {
-    flex-shrink: 0; /* Empêche les images de rétrécir pour tenir dans le conteneur */
-    height: 100%; /* Hauteur de 350px */
-    max-width: 100%; /* Largeur maximale pour conserver les proportions */
-    object-fit: cover; /* Couvre la zone de l'image sans déformation */
-    margin-right: 10px; /* Espacement entre les images */
+    flex-shrink: 0; 
+    height: 100%; 
+    max-width: 100%; 
+    object-fit: cover; 
+    margin-right: 10px; 
 }
 
 .container-à-propos .row {
-    display: flex; /* Utilisation de flexbox pour les éléments enfants */
+    display: flex; 
 }
 
 .container-à-propos .col {
-    flex: 1; /* Chaque colonne prendra 50% de la largeur */
-    max-width: 50%; /* Limiter la largeur à 50% */
+    flex: 1; 
+    max-width: 50%; 
 }
 
 .about-image {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100%; /* Assure que les images prennent toute la hauteur */
+    height: 100%;
 }
 
 .about-image img {
-    width: 100%; /* Assure que l'image occupe toute la largeur du conteneur */
-    height: 100%; /* Assure que l'image prend toute la hauteur du conteneur */
-    object-fit: cover; /* Couvre la zone de l'image sans déformation */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
 /* Styles spécifiques pour la deuxième page */
 .container-univers {
@@ -330,7 +330,8 @@ h1 {
     object-fit: cover;
 }
 .h1-padding,
-.nos-véhicules {
+.nos-véhicules,
+.h1-nosavis {
     padding-top: 100px;
 }
 .p-univers {
@@ -374,14 +375,14 @@ h1 {
 
 /* Styles pour chaque élément de service */
 .service-item {
-    position: relative; /* Position relative pour positionner l'encart semi-transparent */
+    position: relative; 
 }
 
-/* Pour ajuster la taille des images de "MECANIQUE", "CARROSSERIE", "PNEUMATIQUES", "PARE-BRISE" */
+/* Pour ajuster la taille de "MECANIQUE", "CARROSSERIE", "PNEUMATIQUES", "PARE-BRISE" */
 .service-image {
-    width: 100%; /* Faire en sorte que les images remplissent toute la largeur */
-    height: auto; /* Garder le rapport hauteur-largeur */
-    position: relative; /* Position relative pour le positionnement de l'encart */
+    width: 100%; 
+    height: auto; 
+    position: relative; 
 }
 
 /* Styles pour le texte en surimpression */
@@ -400,39 +401,39 @@ h1 {
 }
 /* Styles pour le texte en surimpression au survol */
 .service-item:hover .image-overlay {
-    background-color: rgba(0, 0, 0, 0.7); /* Plus foncé au survol */
+    background-color: rgba(0, 0, 0, 0.7); 
 }
-/* Pour ajuster la taille des images de "UN NOM, UNE HISTOIRE" et de "L'AMOUR DE L'AUTOMOBILE" */
+/* Pour ajuster la taille de "UN NOM, UNE HISTOIRE" et de "L'AMOUR DE L'AUTOMOBILE" */
 .about-image img.first-container-image {
-    width: 100%; /* Ajuster la largeur à 100% */
-    height: auto; /* Garder le rapport hauteur-largeur */
+    width: 100%; 
+    height: auto; 
 }
 .service-overlay {
-    position: absolute; /* Position absolue pour l'encart */
-    bottom: 0; /* Aligner l'encart en bas de l'image */
-    left: 0; /* Aligner l'encart à gauche de l'image */
-    width: 100%; /* Assurez-vous que l'encart a la même largeur que l'image */
-    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
-    color: white; /* Couleur du texte */
-    padding: 20px; /* Remplissage */
-    box-sizing: border-box; /* Inclure les bordures et le remplissage dans la largeur */
-    text-align: center; /* Centrer le texte */
-    font-weight: bol;
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    text-align: center; 
+    font-weight: bold;
 }
 /* Pour positionner l'encart semi-transparent */
 .service-item {
-    position: relative; /* Position relative pour positionner l'encart semi-transparent */
+    position: relative; 
 }
 
 .service-image img {
-    width: 100%; /* Assurez-vous que les images remplissent toute la largeur */
-    height: auto; /* Garder le rapport hauteur-largeur */
+    width: 100%; 
+    height: auto; 
 }
 
 /* Pour ajuster la hauteur de l'encart semi-transparent en fonction de la taille de l'image */
 .service-overlay {
-    bottom: 0; /* Positionner l'encart au bas de l'image */
-    height: auto; /* Ajuster la hauteur en fonction du contenu */
+    bottom: 0; 
+    height: auto; 
 }
 
 /* Centrer le texte dans les encarts semi-transparents */
@@ -441,10 +442,10 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-/* Pour ajuster la taille des images de "MÉCANIQUE", "CARROSSERIE", "PNEUMATIQUES", "PARE-BRISE" */
+/* Pour ajuster la taille de "MÉCANIQUE", "CARROSSERIE", "PNEUMATIQUES", "PARE-BRISE" */
 .service-image img {
-    width: 100%; /* Faire en sorte que les images remplissent toute la largeur */
-    height: 200px; /* Hauteur fixe pour toutes les images */
+    width: 100%; 
+    height: 200px; 
 }
 /* Style pour le bouton "Mon compte" */
 .button-secondary,
@@ -486,101 +487,105 @@ button:hover {
 .password label,
 .prenom label,
 .role label,
-.nom label{
-    display: block; /* Affiche le label sur une nouvelle ligne */
-    font-weight: bold; /* Met en gras le texte du label */
+.nom label,
+.telephone label {
+    display: block; 
+    font-weight: bold; 
 }
 /* Style pour le texte "Mot de passe oublié ?" */
 .forgot-password {
-    font-size: 12px; /* Définir une taille de police plus petite */
+    font-size: 12px; 
     float: right;
 }
 /* Style pour les champs de saisie */
 input[type="email"],
 input[type="password"],
-input[type="text"] {
-    border-radius: 3px; /* Arrondir les coins */
-    padding: 5px; /* Ajouter un remplissage */
-    width: 300px; /* Définir une largeur fixe */
-    box-sizing: border-box; /* Inclure les bordures et le remplissage dans la largeur */
+input[type="text"],
+input[type="nom"],
+input[type="prenom"],
+input[type="telephone"]
+{
+    border-radius: 3px; 
+    padding: 5px; 
+    width: 300px; 
+    box-sizing: border-box; 
 }
 /* Style pour la liste déroulante "Rôle" */
 select#role {
-    border-radius: 3px; /* Arrondir les coins */
-    padding: 5px; /* Ajouter un remplissage */
-    width: 300px; /* Définir une largeur fixe */
-    box-sizing: border-box; /* Inclure les bordures et le remplissage dans la largeur */
+    border-radius: 3px;
+    padding: 5px; 
+    width: 300px; 
+    box-sizing: border-box; 
 }
 .mon-compte {
     padding: 1px 10px;
     margin: 0;
     position: absolute;
     top: 0;
-    padding-top: 0 /* Ajuster cette valeur selon vos besoins */
+    padding-top: 0;
 }
 .button-secondary-annuler,
 button {
-    margin-right: 120px; /* Ajout d'une marge supplémentaire à droite pour séparer le bouton "Annuler" */
+    margin-right: 120px; 
 }
 
 .service-container {
     padding-top: 50px;
     max-width: 70%;
-    margin-left: 0; /* Supprimer la marge automatique à gauche */
+    margin-left: 0; 
     display: flex;
-    align-items: flex-start; /* Aligner le contenu en haut */
-    position: relative; /* Position relative pour les enfants absolus */
+    align-items: flex-start; 
+    position: relative; 
 }
 
 .service-image {
-    flex: 0 0 25%; /* La largeur de l'image est 25% de la largeur de son conteneur */
-    margin-right: 20px; /* Espacement entre l'image et le texte */
+    flex: 0 0 25%; 
+    margin-right: 20px; 
 }
 
 .service-image img {
     padding-top: 30px;
-    width: 35vw; /* L'image occupe 50% de la largeur de l'écran */
-    height: auto; /* Pour conserver le ratio d'aspect */
+    width: 35vw; 
+    height: auto; 
 }
 
 .service-text {
-    flex: 1; /* Le texte prendra tout l'espace restant */
-    font-family: 'Poppins', sans-serif; /* Utilisation de la police Poppins */
-    color: #333; /* Couleur du texte */
-    padding-top: 1px; /* Ajustement pour déplacer le texte plus haut */
+    flex: 1; 
+    font-family: 'Poppins', sans-serif; 
+    color: #333; 
+    padding-top: 1px; 
 }
 .special-text {
-    font-size: smaller; /* Taille de police plus petite */
-    font-weight: bold; /* Texte en gras */
+    font-size: smaller; 
+    font-weight: bold;
 }
 .special-heading {
-    font-size: 1.5em; /* Taille de police équivalente à h3 */
-    font-weight: bold; /* Texte en gras */
-    /* Vous pouvez également ajouter d'autres styles spécifiques à votre h3 ici */
+    font-size: 1.5em; 
+    font-weight: bold; 
 }
 /* Ajoutez ce CSS pour modifier l'ordre des éléments à chaque section */
 .service-container:nth-child(even) .service-image {
-    order: 2; /* Change l'ordre de l'image */
+    order: 2; 
 }
 
 .service-container:nth-child(odd) .service-text {
-    order: 2; /* Change l'ordre du texte */
+    order: 2; 
 }
 
 .filtrer-section {
-    border: 5px solid #2c3e50; /* Bordure solide 2px couleur #2c3e50 */
-    padding: 20px; /* Marge intérieure */
-    max-width: 400px; /* Ajustez la largeur maximale selon vos besoins */
-    display: inline-block; /* Ajoutez cette propriété pour permettre l'alignement horizontal */
+    border: 5px solid #2c3e50; 
+    padding: 20px; 
+    max-width: 400px; 
+    display: inline-block; 
 }
 
 .nb-vehicules {
-    display: inline-block; /* Permettre l'alignement horizontal */
+    display: inline-block; 
     color: #333;
     padding: 10px;
     border-radius: 5px;
-    vertical-align: top; /* Alignement vertical au-dessus */
-    margin-top: -10px; /* Ajuster la marge vers le haut selon vos besoins */
+    vertical-align: top; 
+    margin-top: -10px; 
 }
 
 /* Styles pour les boutons de la page "Nos véhicules" */
@@ -602,12 +607,45 @@ button {
 
 /* Styles pour les boutons à l'intérieur de chaque encart filtrer-encart */
 .filtre-encart button {
-    float: right; /* Aligner les boutons à droite */
-    margin: 0; /* Supprimer complètement les marges */
+    float: right; 
+    margin: 0; 
 }
 /* Styles pour les valeurs de kilométrage */
 .kilometrage-filtre .filtre-encart,
 .annee-filtre .filtre-encart,
 .prix-filtre .filtre-encart {
-    font-size: 11px; /* Définir une taille de police plus petite */
+    font-size: 11px; 
+}
+/* Réduit le padding sur les côtés des encarts d'avis */
+.avis-client {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+/* Augmente l'espace entre la section commentaire et le login */
+#commentaire {
+    margin-bottom: 20px; 
+}
+
+#login {
+    margin-bottom: 20px; 
+}
+
+/* Déplace les boutons vers la droite et ajoute de l'espace autour d'eux */
+.buttons-container button {
+    margin-left: 10px; 
+}
+.avis-droite form {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.star {
+    color: #ffc107; 
+    font-size: 20px; 
+    margin-right: 5px; 
 }
