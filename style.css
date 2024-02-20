@@ -473,15 +473,20 @@ button:hover {
     padding-top: px;
 }
 
-/* Style pour les sections du formulaire */
 .email,
-.password {
+.password,
+.prenom,
+.role,
+.nom {
     margin-bottom: 20px;
 }
 
 /* Style pour les labels */
 .email label,
-.password label {
+.password label,
+.prenom label,
+.role label,
+.nom label{
     display: block; /* Affiche le label sur une nouvelle ligne */
     font-weight: bold; /* Met en gras le texte du label */
 }
@@ -492,13 +497,20 @@ button:hover {
 }
 /* Style pour les champs de saisie */
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"] {
     border-radius: 3px; /* Arrondir les coins */
     padding: 5px; /* Ajouter un remplissage */
     width: 300px; /* Définir une largeur fixe */
     box-sizing: border-box; /* Inclure les bordures et le remplissage dans la largeur */
 }
-
+/* Style pour la liste déroulante "Rôle" */
+select#role {
+    border-radius: 3px; /* Arrondir les coins */
+    padding: 5px; /* Ajouter un remplissage */
+    width: 300px; /* Définir une largeur fixe */
+    box-sizing: border-box; /* Inclure les bordures et le remplissage dans la largeur */
+}
 .mon-compte {
     padding: 1px 10px;
     margin: 0;

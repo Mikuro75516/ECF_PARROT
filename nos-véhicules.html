@@ -6,6 +6,8 @@
     <title>Notre univers</title>
     <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js" defer></script>
@@ -14,25 +16,19 @@
             window.location.href = "Moncompte.html";
         }
     </script>
-   <script>
-    $(document).ready(function() {
-        // Faire une requête AJAX pour récupérer les données du script PHP
-        $.ajax({
-            url: 'page.php', // Chemin vers votre script PHP
-            method: 'GET', // ou 'POST' selon votre configuration
-            success: function(response) {
-                // Afficher la réponse dans la balise <div> avec l'ID 'resultats'
-                $('#resultats').html(response);
-            },
-            error: function(xhr, status, error) {
-                console.error(error);
-            }
-        });
-    });
-</script>
+    <script>
+        function redirectToCreerUnComptePage() {
+            window.location.href = "creeruncompte.html";
+        }
+    </script>
+    <style>
+        #valider-filtre {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+   
 </head>
-
-
 <body>
     <nav>
         <div class="nav-container">
@@ -49,12 +45,11 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
             <div class="buttons-container">
-                <button class="button-primary">Créer un nouveau compte</button>
+                <button class="button-primary" onclick="redirectToCreerUnComptePage()">Créer un nouveau compte</button>
                 <button class="button-secondary" onclick="redirectToMonCompte()">Mon compte</button>
             </div>
         </div>
     </nav>
-
 
     <div class="container">
         <h1 class="nos-véhicules">NOS VÉHICULES</h1>
@@ -66,48 +61,50 @@
      
                 <div class="filtrer-options">
                     <h4>MARQUES <i class="fas fa-chevron-down"></i></h4>
+                    <!-- Zone pour afficher les marques de voiture -->
+                    <div class="marque-filtre">
                     <hr>
                     <h4>MODÈLES <i class="fas fa-chevron-down"></i></h4>
-                    <hr>
-                    <h4>CATÉGORIE <i class="fas fa-chevron-down"></i></h4>
                 </div>
                 <hr>
+                
                 <div class="filtrer-options">
                     <h4>ANNÉE</h4>
                     <hr>
                     <!-- Filtre ANNÉE -->
                     <div class="annee-filtre">
-                        <div class="filtre-trait">•----------------•</div>
-                        <div class="filtre-encart">2001 - 2021 <button>Réinitialiser</button></div>
+                        <input type="number" id="annee-min" placeholder="Année min" value="2000"> - <input type="number" id="annee-max" placeholder="Année max" value="2022">
                     </div>
 
                     <h4>KILOMÉTRAGE</h4>
                     <hr>
                     <!-- Filtre KILOMÉTRAGE -->
                     <div class="kilometrage-filtre">
-                        <div class="filtre-trait">•----------------•</div>
-                        <div class="filtre-encart">177 220 km - 267 220 km <button>Réinitialiser</button></div>
+                        <input type="number" id="kilometrage-min" placeholder="Kilométrage min"> - <input type="number" id="kilometrage-max" placeholder="Kilométrage max">
                     </div>
 
                     <h4>PRIX</h4>
                     <hr>
                     <!-- Filtre PRIX -->
                     <div class="prix-filtre">
-                        <div class="filtre-trait">•----------------•</div>
-                        <div class="filtre-encart">4 7905€ - 9 190€ <button>Réinitialiser</button></div>
+                        <input type="number" id="prix-min" placeholder="Prix min"> - <input type="number" id="prix-max" placeholder="Prix max">
                     </div>
                 </div>
             </div>
     
-        <!-- Bouton Réinitialiser la recherche -->
-        <div style="text-align: center; padding: 20px;">
-            <button class="reinitialiser-btn">Réinitialiser la recherche</button>
-        </div>
-    </section>
+            <!-- Bouton Valider le filtre -->
+            <div style="text-align: center; padding: 20px;">
+                <button id="valider-filtre">Filtrer</button>
+            </div>
+
+            <!-- Bouton Réinitialiser la recherche -->
+            <div style="text-align: center; padding: 20px;">
+                <button class="reinitialiser-btn">Réinitialiser la recherche</button>
+            </div>
+        </section>
         
-    
-    <!-- Nombre de véhicules trouvés -->
-        <p class="nb-vehicules">176 véhicules trouvés</p>
+        <!-- Résultats des véhicules -->
+        <div id="resultats" class="nb-vehicules"></div>
 
         <!-- Photos -->
         <div class="photos-section">
@@ -122,9 +119,7 @@
         </div>
     </div>
 
-
     <!-- Inclure FontAwesome pour les icônes -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <div id="resultats"></div>
 </body>
 </html>
