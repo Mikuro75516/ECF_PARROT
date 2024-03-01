@@ -1,6 +1,6 @@
 # Projet ECF Garage V. Parrot
 
-Ce dépôt contient le code source de l'Épreuve de Contrôle Final (ECF) pour le projet du Garage V. Parrot.
+Ce dépôt contient le code source de l'ECF pour le projet du Garage V. Parrot.
 
 ## Introduction
 
